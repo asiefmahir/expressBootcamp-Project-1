@@ -1,0 +1,20 @@
+{
+  "name": "express-bootcamp",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "express": "^4.17.1",
+    "express-edge": "^2.0.1",
+    "lowdb": "^1.0.0",
+    "uuid": "^3.4.0"
+  },
+  "devDependencies": {},
+  "description": ""
+}
