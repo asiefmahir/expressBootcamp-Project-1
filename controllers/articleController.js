@@ -27,7 +27,13 @@ const postArticle = (req, res) =>{
 }
 
 const editArticle = (req, res) =>{
-    res.render(Articles.edit)
+    
+    let editableSinglePost = db.get('posts').find({id: req.params.id})
+    res.render('Articles.edit', {editableSinglePost: editableSinglePost.toJSON()})
+    // db.get('posts')
+    //     .find({id: req.params.id})
+    //     .assign({ id: editableSinglePost.id})
+    //     .write()
 }
 
 module.exports = {articleList, create, postArticle, singleArticle, editArticle}

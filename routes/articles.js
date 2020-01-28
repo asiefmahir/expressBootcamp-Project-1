@@ -3,8 +3,9 @@ const { articleList, create, postArticle, singleArticle, editArticle } = require
 
 Router.get('/', articleList );
 Router.get('/create', create  );
-Router.post('/edit', editArticle  );
 Router.get('/:id', singleArticle );
+Router.get('/:id/edit', editArticle  );
+
 Router.post('/', postArticle  );
 
 
