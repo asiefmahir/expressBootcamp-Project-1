@@ -64,7 +64,7 @@ const Router = express.Router();
 app.use(express.json());
 app.use(express.urlencoded({extended: true}));
 app.get('/', articleController.articleList)
-app.use( '/articles' ,articleRoutes)
+app.use( '/articles', articleRoutes)
 app.use( '/pages', pages)
 
 // Router.get('/test/:id', (req,res) => {
